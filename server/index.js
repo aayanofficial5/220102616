@@ -4,7 +4,7 @@ require("dotenv").config();
 const cors = require("cors");
 const urlRoutes = require("./routes/Url");
 const dbConnect = require("./config/dbConnect");
-// const { requestLogger, errorLogger } = require("../../logging/backend.js");
+const { requestLogger, errorLogger } = require("../logging/backend.js");
 
 const PORT = process.env.PORT || 4000;
 
@@ -16,8 +16,8 @@ app.use(cors({
   credentials: true,
 }));
 
-// app.use(requestLogger);
-// app.use(errorLogger);
+app.use(requestLogger);
+app.use(errorLogger);
 
 // routes
 app.use("/shorturls", urlRoutes);
