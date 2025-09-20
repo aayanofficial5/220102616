@@ -36,7 +36,7 @@ exports.createShortUrl = async (req, res) => {
     await newShortUrl.save();
 
     return res.status(201).json({
-      shortLink: `http://localhost:${process.env.PORT || 3000}/${code}`,
+      shortLink: `http://localhost:${process.env.CLIENT_PORT || 5173}/${code}`,
       expiry: expiryDate.toISOString(),
     });
   } catch (err) {
