@@ -78,17 +78,27 @@ VITE_CLIENT_URL = <your_client_url> #eg.http://localhost:5173
 ```json
 {
   "url": "https://www.example.com",
-  "validity": 10, // in minutes (eg.10)
+  "validity": 10,
   "shortcode": "mycode"
 }
 ```
+validity : // in minutes (eg.10)
 
-## Shorten URL API TESTING
+## Shorten URL API TESTING (Screenshot)
 ![Shorten URL API TESTING](./client/src/assets/postRouteCheck.png)
 
 ### 2. Redirect
 `GET /shorturls/:shortcode`
 
-## Get Original URL API TESTING
+## Get Original URL API TESTING (Screenshot)
 ![Get Original URL API TESTING](./client/src/assets/getRouteCheck.png)
 ---
+
+## 📌 Notes
+- This project was created as part of a company test/assessment.
+- All screenshots and API examples are for demonstration purposes.
+- Ensure environment variables are correctly set before running the project.
+
+## ✉️ Author
+Aayan Patel  
+GitHub: [https://github.com/aayanofficial5](https://github.com/aayanofficial5)
